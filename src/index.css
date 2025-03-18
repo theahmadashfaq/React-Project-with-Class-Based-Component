@@ -1,0 +1,187 @@
+/* Add this to a separate CSS file or in your component's style section */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-container {
+  background-color: #d2ebf6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.cal {
+  display: flex;
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+}
+
+.f {
+  width: 50%;
+  padding: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.input {
+  margin-bottom: 30px;
+}
+
+.input1 {
+  position: relative;
+}
+
+.input1 span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #e6f4fa;
+  padding: 10px;
+  margin-left: 2px;
+  border-radius: 6px 6px;
+  color: #666;
+}
+
+.input1 input {
+  padding-left: 30px;
+}
+
+.input11 {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.clear-btn {
+  color: #777;
+  text-decoration: underline;
+  font-size: 14px;
+  
+}
+
+.t {
+  display: flex;
+  gap: 15px;
+}
+
+label {
+  display: block;
+  color: #666;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.in {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #e6f4fa;
+  padding: 12px 15px;
+  border-radius: 0 6px 6px 0;
+  color: #666;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-left: none;
+}
+
+.third {
+  margin-top: 30px;
+}
+
+.radio {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.radio input[type="radio"] {
+  margin-right: 10px;
+}
+
+.button {
+  background-color: #e2df36;
+  color: #333;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 30px;
+  width: 250px;
+  cursor: pointer;
+}
+
+.image {
+  width: 50%;
+  background-color: #1a3142;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom-left-radius: 80px;
+}
+
+.image img {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.image h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.image p {
+  color: #a9b6c0;
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .cal {
+    flex-direction: column;
+  }
+
+  .f {
+    width: 100%;
+  }
+
+  .image {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .t {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
